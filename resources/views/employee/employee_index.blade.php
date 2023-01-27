@@ -125,7 +125,7 @@
                                           enctype="multipart/form-data">
                                         @csrf
                                         @method('DELETE')
-                                        <button type="submit" class="btn btn-danger prevent-buttton w-100">Delete
+                                        <button type="submit" class="btn btn-danger prevent-button w-100">Delete
                                         </button>
                                     </form>
                                 </td>

@@ -15,10 +15,6 @@
                                     </div>
                                     <p class="text-xxl lh-1 mb-0 text-dash-color-1">{{$companies}}</p>
                                 </div>
-                                <div class="progress" style="height: 3px">
-                                    <div class="progress-bar bg-dash-color-1" role="progressbar" style="width: 30%"
-                                         aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
                             </div>
                         </a>
                     </div>
@@ -36,10 +32,6 @@
                                         <p class="text-sm text-uppercase text-gray-600 lh-1 mb-0">Employees</p>
                                     </div>
                                     <p class="text-xxl lh-1 mb-0 text-dash-color-2">{{$employees}}</p>
-                                </div>
-                                <div class="progress" style="height: 3px">
-                                    <div class="progress-bar bg-dash-color-2" role="progressbar" style="width: 70%"
-                                         aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
                             </div>
                         </a>

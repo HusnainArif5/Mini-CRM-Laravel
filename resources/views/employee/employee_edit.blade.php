@@ -9,7 +9,7 @@
                 </div>
                 <div class="card-body pt-0">
                     <p class="text-sm">From here you can update selected employee.</p>
-                    <form method="post" action="{{route('employees.update',$employee->id)}}"
+                    <form method="post" class="prevent" action="{{route('employees.update',$employee->id)}}"
                           enctype="multipart/form-data">
                         @csrf
                         <div class="mb-3">
@@ -67,10 +67,23 @@
                             @enderror
                             <div class="form-text" id="phoneHelp">Please Drop Employee's Phone Number.</div>
                         </div>
-                        <button class="btn btn-primary" type="submit">Update</button>
+                        <button class="btn btn-primary prevent-button" type="submit">Update</button>
                     </form>
                 </div>
             </div>
         </div>
     </div>
 @endsection
+
+<!-- Button Disabled Scripts-->
+<script
+    src="https://code.jquery.com/jquery-3.6.3.min.js"
+    integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+    crossorigin="anonymous"></script>
+<script>
+    $(document).ready(function () {
+        $(".prevent").on('submit', function () {
+            $(".prevent-button").attr('disabled', true).html("Processing...");
+        });
+    });
+</script>

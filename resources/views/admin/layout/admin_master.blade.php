@@ -37,7 +37,7 @@
 </div>
 <!-- Toaster Scripts -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-<script src="{{asset('https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js')}}"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
 <script>
     @if(Session::has('success'))
     toastr.success("{{Session::get('success')}}", 'Success', {timeOut: 3000});
@@ -51,7 +51,7 @@
 <!-- JavaScript files-->
 @include('admin.layout.admin_scripts')
 <!-- FontAwesome CSS - loading as last, so it doesn't block rendering-->
-<link rel="stylesheet" href="{{asset('https://use.fontawesome.com/releases/v5.7.1/css/all.css')}}"
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
       integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 </body>
 </html>
